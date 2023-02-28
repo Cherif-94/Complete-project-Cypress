@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^12.6.0"
+  },
+  "scripts": {
+    "test:production": "npx cypress run --e2e" , 
+    "test:report": "npx cypress run --record --key 562406be-23d2-48e9-b67f-9bcc14ea3e19" 
+
+  },
+  "name": "Cypress-complete-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "playwright-webkit": "^1.31.1"
+  }
+}
