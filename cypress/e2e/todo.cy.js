@@ -5,7 +5,7 @@ import TodoCompletedApi from "../Api/todoApi";
 import TodoPage from "../POM/todoPage";
 
 describe('Todo Test Suite  ', () => {
-    var token ; 
+    var  token ; 
     beforeEach(() => {
 
         UserApi.register().then((response) => {
@@ -26,7 +26,7 @@ describe('Todo Test Suite  ', () => {
 
         todo.clickOnSubmitButton() ; 
         
-        todo.firstTodoShouldHaveText('Learn Cypress')
+        todo.firstTodoShouldHaveText('Learn Cypress') ; 
 
     })
 
