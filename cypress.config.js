@@ -7,6 +7,7 @@ module.exports = defineConfig({
     viewportWidth : 1440 , 
     viewportHeight: 990 , 
     experimentalWebKitSupport : true ,
+    videoUploadOnPasses: false , 
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
