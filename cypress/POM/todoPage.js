@@ -17,15 +17,19 @@ class TodoPage {
         }
 
         get firstTodo () {
-            return cy.get('[data-testid="todo-item"]').eq(0)
+            return cy.get('[data-testid="todo-item"]').eq(0) ; 
+        }
+
+        get completeItemIcon () {
+            return cy.get('[data-testid="complete-task"]').eq(0) ; 
         }
 
    clickOnAddButton () {
-      this.addButton.click()
+      this.addButton.click() ; 
    }
 
    addNewTodo (data) {
-       this.newTodo.type(data)
+       this.newTodo.type(data) ; 
       } 
 
     clickOnSubmitButton () {
@@ -33,7 +37,11 @@ class TodoPage {
     } 
     
     firstTodoShouldHaveText(text) {
-        this.firstTodo.should('have.text' , text)
+        this.firstTodo.should('have.text' , text) ; 
+    }
+
+    iconCompleteItem() {
+        this.completeItemIcon.click() ; 
     }
   
 }

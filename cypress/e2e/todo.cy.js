@@ -5,10 +5,15 @@ import TodoCompletedApi from "../Api/todoApi";
 import TodoPage from "../POM/todoPage";
 
 describe('Todo Test Suite  ', () => {
+
     var  token ; 
+
+    const  todo = new TodoPage() ; 
+
     beforeEach(() => {
 
         UserApi.register().then((response) => {
+
             token = response.body.access_token;
  
         })
@@ -17,9 +22,7 @@ describe('Todo Test Suite  ', () => {
     it('Should be able to add a Todo ', () => {
 
         cy.visit('/todo') ;
-
-        const  todo = new TodoPage() ; 
-
+    
         todo.clickOnAddButton() ;
       
         todo.addNewTodo('Learn Cypress') ;
@@ -30,15 +33,18 @@ describe('Todo Test Suite  ', () => {
 
     })
 
-    it('Should be able to Mark a Todo as completed  ', () => {
-      
+    it('Should be able to Mark a Todo as completed  ', () => { 
+
        let TDC = new TodoCompletedApi() ; 
        
         TDC.todoCompleted(token) ;
 
         cy.visit('/') ;
-        cy.get('[data-testid="complete-task"]').eq(0).click();
+
+        todo.iconCompleteItem() ; 
+
         cy.get('[data-testid="todo-item"]').eq(0).should('have.css', 'background-color', 'rgb(33, 76, 97)');
+
         cy.reload();
     })
 
