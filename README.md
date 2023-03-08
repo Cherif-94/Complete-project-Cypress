@@ -1,5 +1,5 @@
 # Complete-project-Cypress
-Cypress - Api test - E2E  -  POM -Report 
+Cypress - Api test - E2E  -  POM Concept ( srp )  - Report using cucumber 
 
 command to run all specs ( features ) --> yarn cypress run
 
