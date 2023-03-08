@@ -1,0 +1,114 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "add-a-new--todo;the-new-todo-should-be-visible-in-the-list",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "the new todo should be visible in the list",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open the website",
+            "result": {
+              "duration": 1960000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 7,
+            "name": "click on add button \u0026\u0026 i type the new todo and \u0026\u0026 i click on submit button",
+            "result": {
+              "duration": 241000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see the new todo contain Learn Cypress io using JavaScript",
+            "result": {
+              "duration": 1218000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "add-a-new--todo",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Add a new  todo",
+    "uri": "cypress\\e2e\\cucumber\\features\\addTodo.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "authentification-suite;visiting-the-frontpage",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "visiting the frontpage",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I open the website",
+            "result": {
+              "duration": 1150000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 4,
+            "name": "I type my credantials correctly",
+            "result": {
+              "duration": 829000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I should be redirected to the todos page",
+            "result": {
+              "duration": 43000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "authentification-suite",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Authentification suite",
+    "uri": "cypress\\e2e\\cucumber\\features\\login.feature"
+  }
+]

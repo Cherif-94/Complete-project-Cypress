@@ -10,7 +10,7 @@ describe('Authentification test suite' ,() => {
      auth.tryAuth('hatem@example.com' ,'123456').then((response) => {
             
          expect(response.status).to.eql(200) ; 
-         
+
          expect(response.body).to.have.property('access_token') ; 
 
     })
@@ -30,7 +30,7 @@ describe('Authentification test suite' ,() => {
 
    cy.wait('@login').then((data) => {
     
-         console.log('Hey hey ',data) ; 
+         console.log('This is a Response comming from API ',data) ; 
          
          expect(data.response.statusCode).to.eql(400) ;
 
