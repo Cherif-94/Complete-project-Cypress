@@ -8,6 +8,7 @@ Given("I open the website", () => {
 });
 
 When("I type my credantials correctly", () => {
+  
      
   UserApi.register() ; 
 

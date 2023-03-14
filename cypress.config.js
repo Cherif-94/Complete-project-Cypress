@@ -24,6 +24,7 @@ module.exports = defineConfig({
     specPattern: "cypress/e2e/cucumber/features/*.feature",
     baseUrl: "https://qacart-todo.herokuapp.com/",
     chromeWebSecurity: false,
+    videoUploadOnPasses: false ,
     env: {
       allureReuseAfterSpec: true,
     },

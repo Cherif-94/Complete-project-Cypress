@@ -6,7 +6,6 @@ import TodoPage from "../../../POM/todoPage";
 
 var  token ; 
 
-const Auth = new UserApi() 
 
 const addTodo = new TodoCompletedApi() ; 
 
@@ -33,10 +32,15 @@ When("click on add button && i type the new todo and && i click on submit button
      
 
   addTodo.todoCompleted(token) ; 
+  addTodo.todoCompleted(token) ;
+  addTodo.todoCompleted(token) ;
+
      
 });
 
-Then('I should see the new todo contain Learn Cypress io using JavaScript' , () => {
+Then('I should see the new todo contain Learn Cypress io using JavaScript && count the number of tasks' , () => {
+    
+    let counter = 0 ; 
 
          cy.visit('/todo')
 
@@ -45,5 +49,18 @@ Then('I should see the new todo contain Learn Cypress io using JavaScript' , () 
           cy.log('hello cypress')   ;
 
           cy.reload() ; 
+
+        // here we count the number of existance tasks  
+
+          TodoCompletedApi.countTasks(token).then((response) => {
+                        
+           counter = response.body.tasks.length
+
+           cy.log('this is a nummbers of tasks' , counter)
+      })
+
+
+
+
 
 })

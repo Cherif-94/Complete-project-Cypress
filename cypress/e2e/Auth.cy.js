@@ -7,7 +7,7 @@ describe('Authentification test suite' ,() => {
 
  it('Success case ' , ()=> {
       
-     auth.tryAuth('hatem@example.com' ,'123456').then((response) => {
+     auth.tryAuth('cherif@gmail.com' ,'123456789').then((response) => {
             
          expect(response.status).to.eql(200) ; 
 

@@ -13,7 +13,7 @@ describe('Login Test Suite  ', () => {
 
    loginPage.visit() ; 
 
-   loginPage.login('hatem@example.com' , '123456') ;
+   loginPage.login('cherif@gmail.com' , '123456789') ;
 
    welcomeMessage.welcomeMessageShouldBeVisible().should('be.visible') ; 
 

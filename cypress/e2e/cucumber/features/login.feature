@@ -1,4 +1,4 @@
-Feature: Authentification suite
+Feature: Authentification suite 🔒🗝️
   Scenario: visiting the frontpage
     Given I open the website
     When  I type my credantials correctly

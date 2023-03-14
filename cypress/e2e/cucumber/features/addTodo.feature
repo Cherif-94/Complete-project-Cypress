@@ -1,5 +1,5 @@
 
-Feature: Add a new  todo
+Feature: Add a new  todo 📝
 
   Scenario: the new todo should be visible in the list
   

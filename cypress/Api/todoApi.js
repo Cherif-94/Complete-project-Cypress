@@ -15,5 +15,20 @@ class TodoCompletedApi {
             },
         })
       }   
+      
+    static  countTasks = (token) => {
+            
+        return cy.request({
+         url:'/api/v1/tasks',
+         method:'GET'  ,
+         headers: {
+
+             Authorization: `bearer ${token}` ,
+
+         }
+        })
+  }
 }
+
+
 export default TodoCompletedApi 

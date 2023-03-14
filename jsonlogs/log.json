@@ -4,7 +4,7 @@
     "elements": [
       {
         "description": "",
-        "id": "add-a-new--todo;the-new-todo-should-be-visible-in-the-list",
+        "id": "add-a-new--todo-📝;the-new-todo-should-be-visible-in-the-list",
         "keyword": "Scenario",
         "line": 4,
         "name": "the new todo should be visible in the list",
@@ -14,7 +14,7 @@
             "line": 6,
             "name": "I open the website",
             "result": {
-              "duration": 1960000000,
+              "duration": 1644000000,
               "status": "passed"
             },
             "match": {
@@ -26,7 +26,7 @@
             "line": 7,
             "name": "click on add button \u0026\u0026 i type the new todo and \u0026\u0026 i click on submit button",
             "result": {
-              "duration": 241000000,
+              "duration": 162000000,
               "status": "passed"
             },
             "match": {
@@ -38,7 +38,7 @@
             "line": 8,
             "name": "I should see the new todo contain Learn Cypress io using JavaScript",
             "result": {
-              "duration": 1218000000,
+              "duration": 803000000,
               "status": "passed"
             },
             "match": {
@@ -49,10 +49,10 @@
         "type": "scenario"
       }
     ],
-    "id": "add-a-new--todo",
+    "id": "add-a-new--todo-📝",
     "keyword": "Feature",
     "line": 2,
-    "name": "Add a new  todo",
+    "name": "Add a new  todo 📝",
     "uri": "cypress\\e2e\\cucumber\\features\\addTodo.feature"
   },
   {
@@ -60,7 +60,7 @@
     "elements": [
       {
         "description": "",
-        "id": "authentification-suite;visiting-the-frontpage",
+        "id": "authentification-suite-🔒🗝️;visiting-the-frontpage",
         "keyword": "Scenario",
         "line": 2,
         "name": "visiting the frontpage",
@@ -70,7 +70,7 @@
             "line": 3,
             "name": "I open the website",
             "result": {
-              "duration": 1150000000,
+              "duration": 4321000000,
               "status": "passed"
             },
             "match": {
@@ -94,7 +94,7 @@
             "line": 5,
             "name": "I should be redirected to the todos page",
             "result": {
-              "duration": 43000000,
+              "duration": 7000000,
               "status": "passed"
             },
             "match": {
@@ -105,10 +105,10 @@
         "type": "scenario"
       }
     ],
-    "id": "authentification-suite",
+    "id": "authentification-suite-🔒🗝️",
     "keyword": "Feature",
     "line": 1,
-    "name": "Authentification suite",
+    "name": "Authentification suite 🔒🗝️",
     "uri": "cypress\\e2e\\cucumber\\features\\login.feature"
   }
 ]

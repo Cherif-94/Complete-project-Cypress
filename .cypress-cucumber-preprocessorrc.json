@@ -15,7 +15,8 @@
   "stepDefinitions": [
     "[filepath]/**/*.{js,ts}",
     "[filepath].{js,ts}",
-    "cypress/e2e/cucumber/step_definitions/*.{js,ts}"
+    "cypress/e2e/cucumber/step_definitions/*.{js,ts}"  
+     
 
   ]
 }
