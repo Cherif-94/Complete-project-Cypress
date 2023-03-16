@@ -1,7 +1,7 @@
 class TodoPage {
 
     welcomeMessageShouldBeVisible = () =>  {
-        return cy.get('[data-testid="welcome"]')         
+        return cy.get('[data-testid="welcome"]')  ;       
 }
 
         get addButton() {
